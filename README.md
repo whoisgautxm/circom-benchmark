@@ -16,5 +16,20 @@ do
 done
 ```
 
+# Benchmarking Results for Email-wallet by [ZK-Email](https://github.com/zk-email)
+## email-sender.circom
+- This is the largest circuit we have so far with close to `2M` constraints.
+- I had considered the Sample Size to be `10` for calculating average time for proving and verifying.
+- `tachyon` is around `35%` faster than `rapidsnark` in the `proving time`.
+- `tachyon` has used `mmap` [see this PR](https://github.com/kroma-network/tachyon/pull/490) to speed up the `zk key parsing` and `witness parsing`.
+![alt text](<email_sender_benchmark.png>)
+
+## announcement.circom
+![alt text](<announcement_benchmark.png>)
+
+## claim.circom
+![alt text](<claim_benchmark.png>)
+
+
 ## Credits
 Scripts from https://github.com/zkmopro/mopro

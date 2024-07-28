@@ -84,7 +84,7 @@ ln -s ${CIRCUIT_NAME}_final.zkey $CIRCUIT_NAME.zkey > /dev/null 2>&1 || true
 echo "========== Rapidsnark CPU =========="
 RapidStandalone
 
-# echo "========== Rapidsnark GPU =========="
+echo "========== Rapidsnark GPU =========="
 # GPURapidStandalone
 
 echo "========== Tachyon CPU =========="

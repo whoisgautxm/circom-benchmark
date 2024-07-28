@@ -21,7 +21,7 @@ fi
 DIR="$1"
 PTAU="$2"
 CIRCUIT="$3"
-PTAU_PATH="${PTAU_DIR}/powersOfTau28_hez_final_${PTAU}.ptau"
+PTAU_PATH="powersOfTau28_hez_final_${PTAU}.ptau"
 
 # Phase 1 - Perpetual Powers of Tau
 # From https://github.com/iden3/snarkjs
